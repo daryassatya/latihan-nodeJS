@@ -15,7 +15,7 @@ const getUserSync = (id, result) => {
     const time = id === 1 ? 3000 : 2000; 
     setTimeout(() => {
         const  nama = id === 1 ? "Dimas Aryasatya" : "Daryas";
-        result = {id, nama};
+        result ({id, nama});
     }, time);
 }
 
@@ -28,3 +28,4 @@ const userDua = getUserSync(2, (result) => {
 });
 
 const halo = "Hello Word";
+console.log('selesai');
